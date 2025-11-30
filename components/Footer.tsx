@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           “Smart Education – Empowering Minds, Shaping Futures.”
         </p>
         <p className="text-sm text-bright-blue-200">
-          © 2025 Smart Education | Founded by Lucky Kitonyi | Kibauni, Mwala, Kenya.
+          © 2025 Smart Education | Founded by Lucky Kitonyi and Grace Kitonyi | Kibauni, Mwala, Kenya.
         </p>
       </div>
     </footer>

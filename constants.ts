@@ -9,7 +9,5 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = {
-    whatsapp: 'https://wa.me/254000000000', // Replace with actual number
-    twitter: 'https://twitter.com/smarteducation',
-    facebook: 'https://facebook.com/smarteducation',
+    whatsapp: 'https://wa.me/254742180636', // Replace with actual number
 };

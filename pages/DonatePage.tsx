@@ -77,9 +77,9 @@ const DonatePage: React.FC = () => {
               {/* M-Pesa Placeholder */}
               <div className="border border-gray-200 p-6 rounded-lg">
                 <h4 className="font-bold text-lg text-green-600 mb-2">M-Pesa</h4>
-                <p>Paybill: <span className="font-mono bg-gray-100 p-1 rounded">XXXXXX</span></p>
-                <p>Account No: <span className="font-mono bg-gray-100 p-1 rounded">DONATE</span></p>
-                <p className="text-sm mt-2 text-gray-500">[Integration Placeholder]</p>
+                <p>Send Money: <span className="font-mono bg-gray-100 p-1 rounded">+254742180636</span></p>
+                <p>Mpesa Name: <span className="font-mono bg-gray-100 p-1 rounded">Lucky Kitonyi</Lu></p>
+                <p className="text-sm mt-2 text-gray-500"></p>
               </div>
 
               {/* Bank Transfer Placeholder */}
@@ -87,7 +87,7 @@ const DonatePage: React.FC = () => {
                 <h4 className="font-bold text-lg text-blue-600 mb-2">Bank Transfer</h4>
                 <p>Bank Name: <span className="font-mono">Kenya Commercial Bank</span></p>
                 <p>Account Name: <span className="font-mono">Smart Education</span></p>
-                <p>Account Number: <span className="font-mono bg-gray-100 p-1 rounded">+254742180636</span></p>
+                <p>Account Number: <span className="font-mono bg-gray-100 p-1 rounded">1341552934</span></p>
                 <p className="text-sm mt-2 text-gray-500">[Integration Placeholder]</p>
               </div>
 
@@ -97,7 +97,7 @@ const DonatePage: React.FC = () => {
                 <button className="w-full bg-bright-blue-600 text-white py-3 rounded-lg font-bold hover:bg-bright-blue-700 transition">
                   Pay Securely via Card
                 </button>
-                <p className="text-sm mt-2 text-gray-500">[Stripe/PayPal Integration Placeholder]</p>
+                <p className="text-sm mt-2 text-gray-500">PayPal Email : starletlucky71@gmail.com</p>
               </div>
             </div>
           </div>
