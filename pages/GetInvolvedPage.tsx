@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
 import AnimatedPage from '../components/AnimatedPage';
 
 const GetInvolvedPage: React.FC = () => {
@@ -26,9 +24,14 @@ const GetInvolvedPage: React.FC = () => {
                 <li>Help organize donation drives</li>
                 <li>Provide administrative support</li>
               </ul>
-              <Link to="/contact" className="inline-block bg-bright-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-bright-blue-700 transition">
+              <a 
+                href="https://forms.gle/kPcE8AeTYfUd8HF19" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block bg-bright-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-bright-blue-700 transition"
+              >
                 Volunteer With Us
-              </Link>
+              </a>
             </div>
 
             {/* Partner With Us */}
@@ -40,9 +43,14 @@ const GetInvolvedPage: React.FC = () => {
               <p className="text-gray-700 mb-6">
                 Let's collaborate to create a sustainable and impactful program that benefits the entire community.
               </p>
-              <Link to="/contact" className="inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition">
+              <a 
+                href="https://forms.gle/4q1SuuvLzvnwDK7q9" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition"
+              >
                 Become a Partner
-              </Link>
+              </a>
             </div>
           </div>
         </div>

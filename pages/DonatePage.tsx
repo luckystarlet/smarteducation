@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AnimatedPage from '../components/AnimatedPage';
 
@@ -78,7 +77,7 @@ const DonatePage: React.FC = () => {
               <div className="border border-gray-200 p-6 rounded-lg">
                 <h4 className="font-bold text-lg text-green-600 mb-2">M-Pesa</h4>
                 <p>Send Money: <span className="font-mono bg-gray-100 p-1 rounded">+254742180636</span></p>
-                <p>Mpesa Name: <span className="font-mono bg-gray-100 p-1 rounded">Lucky Kitonyi</Lu></p>
+                <p>Mpesa Name: <span className="font-mono bg-gray-100 p-1 rounded">Lucky Kitonyi</span></p>
                 <p className="text-sm mt-2 text-gray-500"></p>
               </div>
 

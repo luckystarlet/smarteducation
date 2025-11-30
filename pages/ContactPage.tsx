@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import AnimatedPage from '../components/AnimatedPage';
 import { SOCIAL_LINKS } from '../constants';
@@ -68,7 +67,7 @@ export default function ContactPage() {
             <div className="space-y-8">
                 <div className="bg-white p-8 rounded-lg shadow-xl">
                     <h3 className="text-xl font-bold text-bright-blue-700 mb-4">Contact Information</h3>
-                    <p className="text-gray-700 mb-2"><strong>Email:</strong> <a href="mailto:empowerthem01@gmail.com" className="text-bright-blue-600 hover:underline">info@smarteducation.org</a></p>
+                    <p className="text-gray-700 mb-2"><strong>Email:</strong> <a href="mailto:info@smarteducation.org" className="text-bright-blue-600 hover:underline">info@smarteducation.org</a></p>
                     <p className="text-gray-700 mb-2"><strong>Phone:</strong> <a href="tel:+254742180636" className="text-bright-blue-600 hover:underline">+254 742 180 636</a></p>
                     <p className="text-gray-700"><strong>Location:</strong> Kibauni, Mwala, Machakos County, Kenya</p>
                 </div>
