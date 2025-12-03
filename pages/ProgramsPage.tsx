@@ -20,22 +20,22 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ imageSrc, title, description 
 const ProgramsPage: React.FC = () => {
   const programs = [
     {
-      imageSrc: '../public/Assets/image for mentorship - program.jpg',
+      imageSrc: '/Assets/image for mentorship - program.jpg',
       title: 'Mentorship & Career Guidance',
       description: 'We connect students with successful professionals and community leaders for mentorship and provide inspiring talks to build confidence and ambition. Our program also equips students with knowledge about future career paths, effective study skills, and the tools needed to achieve their long-term goals.'
     },
     {
-      imageSrc: '../public/Assets/Awards and Mentorship.jpeg',
+      imageSrc: '/Assets/Awards and Mentorship.jpeg',
       title: 'Student Awards & Recognition',
       description: 'To foster a spirit of excellence and dedication, we partner with schools in underserved areas to award the most committed and top-performing students. This recognition helps to keep students motivated and zealous about their education.'
     },
     {
-      imageSrc: '../public/Assets/gal diginity - program.jpeg',
+      imageSrc: '/Assets/gal diginity - program.jpeg',
       title: 'Girls’ Dignity Project',
       description: 'We are committed to keeping girls in school by tackling period poverty. Through this project, we distribute sanitary pads and provide health education, ensuring that menstruation is never a barrier to a girl\'s education.'
     },
     {
-      imageSrc: '../public/Assets/scholarship Assistance.jpeg',
+      imageSrc: '/Assets/scholarship Assistance.jpeg',
       title: 'Scholarship Assistance Program',
       description: 'We help vulnerable, focused, and committed students find and apply for scholarships. Our goal is to remove financial barriers and connect deserving students with opportunities for higher education.'
     }
