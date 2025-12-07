@@ -45,7 +45,7 @@ const AboutPage: React.FC = () => {
               <p className="font-medium text-gray-500 mb-4">CEO</p>
               <div className="text-left space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Dr. Grace kitonyi, a skilled lecture also hailing from Kibauni, leading Smart Education with a shared vision. He brings a powerful perspective on the role of technology and modern skills in education and is deeply passionate about mentoring young minds to thrive in underserved areas.
+                  Dr. Grace kitonyi, a skilled lecture also hailing from Kibauni, leading Smart Education with a shared vision. She brings a powerful perspective on the role of technology and modern skills in education and is deeply passionate about mentoring young minds to thrive in underserved areas.
                 </p>
                 <p>
                   Her expertise helps shape programs that are not only inspirational but also practical, preparing students for future careers and ensuring they have access to the same opportunities as their urban counterparts.
