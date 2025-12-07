@@ -24,6 +24,7 @@ const App: React.FC = () => {
             <Route path="/donate" element={<DonatePage />} />
             <Route path="/get-involved" element={<GetInvolvedPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
       </main>
       <Footer />
