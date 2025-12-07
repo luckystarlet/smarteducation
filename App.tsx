@@ -9,6 +9,7 @@ import ProgramsPage from './pages/ProgramsPage';
 import DonatePage from './pages/DonatePage';
 import GetInvolvedPage from './pages/GetInvolvedPage';
 import ContactPage from './pages/ContactPage';
+import GalleryPage from './pages/GalleryPage';
 
 const App: React.FC = () => {
   const location = useLocation();
