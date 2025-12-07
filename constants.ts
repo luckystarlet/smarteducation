@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { href: '/donate', label: 'Donate' },
   { href: '/get-involved', label: 'Get Involved' },
   { href: '/contact', label: 'Contact' },
+  { href: '/gallery', label: 'Gallery' },
 ];
 
 export const SOCIAL_LINKS = {
