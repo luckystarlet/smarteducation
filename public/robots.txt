@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smarteducation.co.ke/sitemap.xml
+Sitemap: https://smart-education.co.ke/sitemap.xml
