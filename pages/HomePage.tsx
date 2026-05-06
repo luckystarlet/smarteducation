@@ -2,7 +2,38 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedPage from '../components/AnimatedPage';
 
+interface CoreProgramCardProps {
+  title: string;
+  description: string;
+}
+
+const CoreProgramCard: React.FC<CoreProgramCardProps> = ({ title, description }) => (
+  <div className="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+    <h3 className="text-xl font-bold text-bright-blue-700 mb-2">{title}</h3>
+    <p className="text-gray-600">{description}</p>
+  </div>
+);
+
 const HomePage: React.FC = () => {
+  const corePrograms = [
+    {
+      title: 'Mentorship & Career Guidance',
+      description: 'Connecting students with role models and equipping them with knowledge about future career paths to build confidence and ambition.'
+    },
+    {
+      title: 'Student Awards & Recognition',
+      description: 'Awarding top-performing and committed students to foster a spirit of excellence and keep them motivated.'
+    },
+    {
+      title: 'Inspire & Excel Program',
+      description: 'Through school outreach sessions, we inspire students to dream bigger and work smarter. Our approach blends mentorship, real-life guidance, and engaging STEM-based challenges to strengthen both mindset and academic performance. By exposing learners to science, technology, engineering, and mathematics in practical and exciting ways, we nurture confident, resilient students who are prepared to shape their own future.'
+    },
+    {
+      title: 'Voices & Vision Program',
+      description: 'We empower students to speak, think, and lead with confidence. Through interactive dialogue sessions, we expose learners to new perspectives, challenge limiting beliefs, and encourage bold thinking. The goal is simple: help every student see possibilities beyond their current environment—and believe they can reach them.'
+    }
+  ];
+
   return (
     <AnimatedPage>
       {/* Hero Section */}
@@ -30,24 +61,13 @@ const HomePage: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-bright-blue-800 mb-4">Our Core Programs</h2>
-          <p className="max-w-3xl mx-auto text-gray-600 mb-12">We focus on holistic development to ensure every student has the opportunity to succeed.</p>
+          <p className="max-w-3xl mx-auto text-gray-600 mb-12">
+            We focus on holistic development to ensure every student has the opportunity to succeed.
+          </p>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-              <h3 className="text-xl font-bold text-bright-blue-700 mb-2">Mentorship & Career Guidance</h3>
-              <p className="text-gray-600">Connecting students with role models and equipping them with knowledge about future career paths to build confidence and ambition.</p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                <h3 className="text-xl font-bold text-bright-blue-700 mb-2">Student Awards & Recognition</h3>
-                <p className="text-gray-600">Awarding top-performing and committed students to foster a spirit of excellence and keep them motivated.</p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-              <h3 className="text-xl font-bold text-bright-blue-700 mb-2">Girls’ Dignity Program</h3>
-              <p className="text-gray-600">Providing sanitary pads to ensure girls can attend school with dignity and without interruption.</p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-              <h3 className="text-xl font-bold text-bright-blue-700 mb-2">Scholarship Assistance</h3>
-              <p className="text-gray-600">Connecting deserving students with scholarship opportunities to remove financial barriers to education.</p>
-            </div>
+            {corePrograms.map((program, index) => (
+              <CoreProgramCard key={index} {...program} />
+            ))}
           </div>
         </div>
       </section>
