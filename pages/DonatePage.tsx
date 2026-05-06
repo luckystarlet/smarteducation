@@ -105,7 +105,7 @@ const DonatePage: React.FC = () => {
       alert('Please select or enter a donation amount');
       return;
     }
-    const paypalUrl = `https://www.paypal.com/paypalme/starletlucky71/${amount}KES`;
+    const paypalUrl = `https://www.paypal.com/paypalme/empowerthem01/${amount}KES`;
     window.open(paypalUrl, '_blank');
   };
 
@@ -289,7 +289,7 @@ const DonatePage: React.FC = () => {
                 </div>
                 <div className="mb-4 p-3 bg-purple-50 rounded text-left">
                   <p className="text-sm text-purple-900">
-                    <strong>PayPal Email:</strong> starletlucky71@gmail.com
+                    <strong>PayPal Email:</strong> empowerthem01@gmail.com
                   </p>
                 </div>
                 <button
