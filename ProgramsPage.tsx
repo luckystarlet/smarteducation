@@ -29,16 +29,7 @@ const ProgramsPage: React.FC = () => {
       title: 'Student Awards & Recognition',
       description: 'To foster a spirit of excellence and dedication, we partner with schools in underserved areas to award the most committed and top-performing students. This recognition helps to keep students motivated and zealous about their education.'
     },
-    {
-      imageSrc: '/Assets/gal diginity - program.jpeg',
-      title: 'Girls’ Dignity Project',
-      description: 'We are committed to keeping girls in school by tackling period poverty. Through this project, we distribute sanitary pads and provide health education, ensuring that menstruation is never a barrier to a girl\'s education.'
-    },
-    {
-      imageSrc: '/Assets/Scholarship Assistance.jpeg',
-      title: 'Scholarship Assistance Program',
-      description: 'We help vulnerable, focused, and committed students find and apply for scholarships. Our goal is to remove financial barriers and connect deserving students with opportunities for higher education.'
-    }
+    
   ];
 
   return (
