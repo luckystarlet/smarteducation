@@ -307,7 +307,7 @@ const DonatePage: React.FC = () => {
             <div className="mt-8 p-4 bg-blue-50 rounded-lg text-left">
               <p className="text-sm text-gray-700">
                 <strong>Note:</strong> After completing your donation, please email your receipt to{' '}
-                <a href="mailto:starletlucky71@gmail.com" className="text-blue-600 hover:underline">
+                <a href="mailto:empowerthem01@gmail.com" className="text-blue-600 hover:underline">
                   empowerthem01@gmail.com
                 </a>{' '}
                 so we can acknowledge your contribution and send you a thank you message.
