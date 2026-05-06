@@ -3,13 +3,52 @@ import AnimatedPage from '../components/AnimatedPage';
 import { SOCIAL_LINKS } from '../constants';
 import { WhatsAppIcon, TwitterIcon, FacebookIcon } from '../components/icons';
 
-export default function ContactPage() {
+interface ContactInfoItemProps {
+  label: string;
+  value: string;
+  href: string;
+  isLink: boolean;
+}
+
+const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ label, value, href, isLink }) => (
+  <p className="text-gray-700 mb-2">
+    <strong>{label}:</strong>{' '}
+    {isLink ? (
+      <a href={href} className="text-bright-blue-600 hover:underline">{value}</a>
+    ) : (
+      value
+    )}
+  </p>
+);
+
+const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
+    message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const contactDetails: ContactInfoItemProps[] = [
+    {
+      label: 'Email',
+      value: 'empowerthem01@gmail.com',
+      href: 'mailto:empowerthem01@gmail.com',
+      isLink: true
+    },
+    {
+      label: 'Phone',
+      value: '+254 742 180 636',
+      href: 'tel:+254742180636',
+      isLink: true
+    },
+    {
+      label: 'Location',
+      value: 'Kibauni, Mwala, Machakos County, Kenya',
+      href: '',
+      isLink: false
+    }
+  ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,7 +58,6 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Here you would typically send the data to a backend service
     setIsSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
   };
@@ -30,7 +68,9 @@ export default function ContactPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-bright-blue-800">Contact Us</h1>
-            <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">We'd love to hear from you. Whether you have a question, a suggestion, or want to partner with us, please reach out.</p>
+            <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+              We'd love to hear from you. Whether you have a question, a suggestion, or want to partner with us, please reach out.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -46,17 +86,44 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full Name</label>
-                    <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-bright-blue-500 focus:border-bright-blue-500"/>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-bright-blue-500 focus:border-bright-blue-500"
+                    />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
-                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-bright-blue-500 focus:border-bright-blue-500"/>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-bright-blue-500 focus:border-bright-blue-500"
+                    />
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={5} required className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-bright-blue-500 focus:border-bright-blue-500"/>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={5}
+                      required
+                      className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-bright-blue-500 focus:border-bright-blue-500"
+                    />
                   </div>
-                  <button type="submit" className="w-full bg-bright-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-bright-blue-700 transition transform hover:scale-105">
+                  <button
+                    type="submit"
+                    className="w-full bg-bright-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-bright-blue-700 transition transform hover:scale-105"
+                  >
                     Send Message
                   </button>
                 </form>
@@ -65,20 +132,20 @@ export default function ContactPage() {
 
             {/* Contact Info & Socials */}
             <div className="space-y-8">
-                <div className="bg-white p-8 rounded-lg shadow-xl">
-                    <h3 className="text-xl font-bold text-bright-blue-700 mb-4">Contact Information</h3>
-                    <p className="text-gray-700 mb-2"><strong>Email:</strong> <a href="mailto:info@smarteducation.org" className="text-bright-blue-600 hover:underline">info@smarteducation.org</a></p>
-                    <p className="text-gray-700 mb-2"><strong>Phone:</strong> <a href="tel:+254742180636" className="text-bright-blue-600 hover:underline">+254 742 180 636</a></p>
-                    <p className="text-gray-700"><strong>Location:</strong> Kibauni, Mwala, Machakos County, Kenya</p>
+              <div className="bg-white p-8 rounded-lg shadow-xl">
+                <h3 className="text-xl font-bold text-bright-blue-700 mb-4">Contact Information</h3>
+                {contactDetails.map((item, index) => (
+                  <ContactInfoItem key={index} {...item} />
+                ))}
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-xl">
+                <h3 className="text-xl font-bold text-bright-blue-700 mb-4">Connect With Us</h3>
+                <div className="flex space-x-6">
+                  <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-500 transition"><WhatsAppIcon /></a>
+                  <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition"><TwitterIcon /></a>
+                  <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition"><FacebookIcon /></a>
                 </div>
-                <div className="bg-white p-8 rounded-lg shadow-xl">
-                    <h3 className="text-xl font-bold text-bright-blue-700 mb-4">Connect With Us</h3>
-                    <div className="flex space-x-6">
-                        <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-500 transition"><WhatsAppIcon /></a>
-                        <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition"><TwitterIcon /></a>
-                        <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition"><FacebookIcon /></a>
-                    </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -86,3 +153,5 @@ export default function ContactPage() {
     </AnimatedPage>
   );
 };
+
+export default ContactPage;
