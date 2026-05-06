@@ -30,7 +30,7 @@ const ProgramsPage: React.FC = () => {
       description: 'To foster a spirit of excellence and dedication, we partner with schools in underserved areas to award the most committed and top-performing students. This recognition helps to keep students motivated and zealous about their education.'
     },
     {
-      imageSrc: '/Assets/gal diginity - program.jpeg',
+      imageSrc: '/Assets/CAMP KIGALI school.jpeg',
       title: 'Inspire & Excel Program',
       description: 'Through school outreach sessions, we inspire students to dream bigger and work smarter. Our approach blends mentorship, real-life guidance, and engaging STEM-based challenges to strengthen both mindset and academic performance. By exposing learners to science, technology, engineering, and mathematics in practical and exciting ways, we nurture confident, resilient students who are prepared to shape their own future.'
     },
