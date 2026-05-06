@@ -35,9 +35,9 @@ const ProgramsPage: React.FC = () => {
       description: 'Through school outreach sessions, we inspire students to dream bigger and work smarter. Our approach blends mentorship, real-life guidance, and engaging STEM-based challenges to strengthen both mindset and academic performance. By exposing learners to science, technology, engineering, and mathematics in practical and exciting ways, we nurture confident, resilient students who are prepared to shape their own future.'
     },
     {
-      imageSrc: '/Assets/Scholarship Assistance.jpeg',
-      title: 'Scholarship Assistance Program',
-      description: 'We help vulnerable, focused, and committed students find and apply for scholarships. Our goal is to remove financial barriers and connect deserving students with opportunities for higher education.'
+      imageSrc: '/Assets/Nairobi school.jpeg',
+      title: 'Voices & Vision Program',
+      description: 'We empower students to speak, think, and lead with confidence. Through interactive dialogue sessions, we expose learners to new perspectives, challenge limiting beliefs, and encourage bold thinking. The goal is simple: help every student see possibilities beyond their current environment—and believe they can reach them.'
     }
   ];
 
