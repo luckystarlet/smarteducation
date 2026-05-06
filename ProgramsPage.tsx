@@ -31,8 +31,8 @@ const ProgramsPage: React.FC = () => {
     },
     {
       imageSrc: '/Assets/gal diginity - program.jpeg',
-      title: 'Girls’ Dignity Project',
-      description: 'We are committed to keeping girls in school by tackling period poverty. Through this project, we distribute sanitary pads and provide health education, ensuring that menstruation is never a barrier to a girl\'s education.'
+      title: 'Inspire & Excel Program',
+      description: 'Through school outreach sessions, we inspire students to dream bigger and work smarter. Our approach blends mentorship, real-life guidance, and engaging STEM-based challenges to strengthen both mindset and academic performance. By exposing learners to science, technology, engineering, and mathematics in practical and exciting ways, we nurture confident, resilient students who are prepared to shape their own future.'
     },
     {
       imageSrc: '/Assets/Scholarship Assistance.jpeg',
