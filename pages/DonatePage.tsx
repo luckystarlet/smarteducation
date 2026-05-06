@@ -111,7 +111,7 @@ const DonatePage: React.FC = () => {
 
   const handleBankTransfer = () => {
     setSelectedMethod('bank');
-    alert('Bank details are displayed below. Please complete your transfer and email us the receipt at starletlucky71@gmail.com');
+    alert('Bank details are displayed below. Please complete your transfer and email us the receipt at empowerthem01@gmail.com');
   };
 
   const getSelectedAmount = () => customAmount || donationAmount;
